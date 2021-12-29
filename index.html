@@ -1,0 +1,290 @@
+<!-- how to create an html file > right click > then end the file name with a .html for html or .css for css
+
+# ------------------------------------------------------------------------------------------------------------------- #
+# First lesson
+
+# How does the Internet work?
+# Its just a long piece of wire
+# the wire connects different computers to each other
+
+
+# server:
+# some of these computers have to be online 24/7, ready to serve you all of the data and files you are requesting
+
+# client:
+# computers that access the internet
+
+
+# ------------------------------------------------------------------------------------------------------------------- #
+# second lesson
+
+In order to access a web page you need a browser.
+
+Data that you receive from the server usually consists of three types of file:
+- HTML: responsible for the structure of your website (add image, button, textbox...)
+- CSS: responsible for styling your website (font, color, etc...)
+- JS: that allows your website to have behaviour and do things
+
+highlight title > right-click > inspect:
+it brings up chrome developer tool
+opens up the entire code file used to render the website
+
+When you hit refresh you are making a new request to the server by loading up a fresh copy of the website
+
+# ------------------------------------------------------------------------------------------------------------------- #
+# third lesson
+
+All browsers are used to interpret all your code files into a website that should be displayed
+
+HTML is required for building websites (you can create a website through just html)
+
+HTML = HyperText Markup Language
+
+many other markup languages:
+XML = Extensible Markup Language
+GML = Generalised Markup Language
+
+
+you can specify layout and structure through html tags:
+
+tags start with angular brackets and end with angular brackets
+In the middle is the type of element or tag
+close your tags or else the program will interpret that everything on the page should be capitalized
+
+to close it:
+backslash before the element
+
+notice:
+heading tags get smaller as the no. goes up
+h6 is the smallest size for heading element!
+
+sources for documentation:
+mdn
+w3 schools
+dev docs
+
+how to add spaces?
+use this code br. Interesting fact is that br doesn't require a closing element!
+
+# ------------------------------------------------------------------------------------------------------------------- #
+# fourth lesson
+
+structure: start tag > element > end tag
+
+there are self-closing tags which don't require an end tag, such as the break tag br
+
+documentation:
+tag omission states whether the tag is a self-closing tag or not
+
+new tag:
+hr
+
+after the tag you can add an html attribute. Its a specification that modifies the html element further
+
+
+new tag:
+center: not self-closing tag
+
+-->
+<!-- -->
+<!--
+below is a boilerplate code:
+Boilerplate codes are basically code templates
+
+
+
+To get the other versions of html use code below (below is html 4)
+html:4t (press tab)
+
+Below is the latest version of html (html 5)
+Tells the browser to render this file as an HTML 5 document
+
+cheatsheet for emmet:
+https://docs.emmet.io/cheat-sheet/
+
+html tags:
+indicating that everything between the tags is html code
+
+code consists of head and body
+
+head:
+part of the html file that holds information about the webpage
+
+title:
+title of this particular document or page
+
+meta elements:
+Give extra associated data to your HTML document
+
+Telling the browser that if we open up the file, all the text inside the webpage is encoded using the UTF-8 encoding
+system
+
+UTF-8 includes all international symbols
+
+-----------------------------------------------------------------------------------------------------------------------
+Body:
+contains the website content
+
+how to structure your html file:
+
+use indents to know which tags are contained within other ones
+
+tags to italicize text:
+
+i and em.
+
+In general, it is best to use the emphasis tag because it conveys more information. The i tag just styles the
+text, however the em does that too, but it says the text between it should be stressed and has importance.
+
+tags to bold text:
+
+bold and strong.
+
+Strong puts emphasis
+
+tips:
+To add a new paragraph simply create a new paragraph in between the tag lines of the body
+-----------------------------------------------------------------------------------------------------------------------
+lists:
+ul: Stands for unordered list
+ol: ordered list
+li: Encloses each and every bullet point
+How to create HTML lists
+-----------------------------------------------------------------------------------------------------------------------
+image:
+it is a self-closing tag
+provide the source of the image (it could be provided in the form of url or a local image in the same directory as your
+website)
+
+attributes:
+alt: basically if browser can't render an image it would show a text instead
+     This can be used
+
+One of the issues with url is that your browser has to download it from the host website e.g. twitter (what if that host
+website is down)
+-----------------------------------------------------------------------------------------------------------------------
+The H in html stands for hypertext.
+
+Hypertext: hypertext is a bunch of text documents that can be linked together by these hyperlinks. Hyperlinks will take
+you to a different text document
+
+anchor tag:
+attributes:
+href: Takes you to the links destination
+
+<a href=link destination>link text</a>
+-----------------------------------------------------------------------------------------------------------------------
+Section 42
+
+Creating a table
+table -> tr(table row) -> td(table data or cell or column)
+thead - table head: add bold title for each of our columns -> th
+tbody - table body
+tfoot - table footer
+
+In the MDN documents:
+sometimes the attributes will have a thumbs down. This means that they are deprecated.
+Deprecated means something that is downgraded (not recommended to use). This is because you can change the style of
+your website through HTML elements and attributes (which is what CSS already does)
+
+Tables:
+Use it to affect the layout of your various html elements on your website
+
+attributes:
+cellspacing - Defines the size of the space between two cells in a percentage value or pixels
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Aulia's Personal Site</title>
+</head>
+
+<body>
+  <table cellspacing="20">
+    <tr>
+      <td><img src="bmo.png" alt="Aulia's profile pic" width="200" height="200"></td>
+      <td>
+        <h1> Aulia Ali Akbar </h1>
+        <p> <em> Recent graduate from <strong><a href="https://www.manchester.ac.uk/">The Univeristy of Manchester</a></strong>. </em> </p>
+        <p> I am recent graduate from The University of Manchester with a Bachelors of Engineering in Chemical Engineering. </p>
+      </td>
+    </tr>
+  </table>
+
+
+  <hr>
+  <h3> Education </h3>
+  <ul>
+    <li>British Internation School of Al Khobar (IGCSE)</li>
+    <ul>
+      <li>Achieved 3 A*'s, 8 B's, and 1 C</li>
+    </ul>
+    <li>CATS College Canterbury (A-Level)</li>
+    <ul>
+      <li>Achieved an AAB in Chemistry, Math, and Physics respectively</li>
+    </ul>
+    <li>The University of Manchester (Bachelors of Engineering)</li>
+    <ul>
+      <li>Achieved an Upper Second Class</li>
+    </ul>
+  </ul>
+  <hr>
+  <h3>Work Experience</h3>
+  <table cellspacing="10">
+    <thead>
+      <tr>
+        <th>Dates</th>
+        <th>Work</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2015-2016</td>
+        <td>Library Assistant</td>
+      </tr>
+      <tr>
+        <td>2016-2018</td>
+        <td>Animal Shelter Volunteer</td>
+      </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
+  <hr>
+  <h3>Skills</h3>
+  <table cellspacing="20">
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td>Python Programming</td>
+            <td>⭐⭐⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Microsoft 365</td>
+            <td>⭐⭐⭐⭐</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table>
+          <tr>
+            <td>Breathing</td>
+            <td>⭐⭐⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Martial Arts</td>
+            <td>⭐⭐⭐⭐</td>
+          </tr>
+        </table>
+      </td>
+  </table>
+  <hr>
+  <a href="hobbies.html">My Hobbies</a><br>
+  <a href="contact_details.html">Contact Details</a>
+</body>
+
+</html>

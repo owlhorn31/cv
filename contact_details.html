@@ -1,0 +1,67 @@
+<!--
+form:
+form tag is used to define what goes into the form
+Form doesn't do anything hence you need to put the label and input in it
+
+label:
+To write some text to display something that is a label
+
+input:
+type -
+text: gives you a text box
+color: gives you a color picker
+submit: gives you a submit button
+checkbox: gives you a checkbox
+password: password input (Everything you type is masked)
+email: gives you a text box that checks whether you've entered a valid email
+
+name - helps identify the data thats inside each of these inputs
+
+textarea:
+Below will determine the starting width and height of the text area
+rows: determine how tall your text area should be
+columns: determine how wide your text area should be
+
+at the bottom right corner enables you to manipulate its width
+
+weird occurence:
+When you press submit it leads you to your front page again.
+This is because action (attribute of form) is assigned to the index.html
+
+
+action attribute:
+mailto : when pressing submit it will open your default mail client (gmail)
+
+method attribute:
+transfer what the user puts in these input field (textarea) into the email client
+
+enctype attribute:
+text/plain: encodes the data in our form as
+plain text (no numbers or % signs when mail is open)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Contact Details</title>
+</head>
+
+<body>
+  <h3>My Contact Details</h3>
+  <p>08119719232</p>
+  <p>fakeaulia69@gmail.com</p>
+  <hr>
+  <form action="mailto:fakeaulia69@gmail.com" method="post" enctype="text/plain">
+    <label> Your Name:</label>
+    <input type="text" name="yourName" value=""><br>
+    <label>Your Email:</label>
+    <input type="email" name="yourEmail" value=""><br>
+    <label>Your Message:</label><br>
+    <textarea name="yourMesasage" rows="10" cols="30"></textarea>
+    <input type="submit" name="">
+  </form>
+</body>
+
+</html>
